@@ -1,0 +1,7 @@
+<view>
+  <import src="../models/models.axml"/>
+  <search onSearch="search" placeholder="请输入称呼或者电话号码" />
+  <list clumns="{{clumns}}" lists="{{lists}}" onClickFun="func" onTitleClickFun="titleFun" empty_tips="{{tips}}" />
+  <floatblock icon="{{icons}}" onShowButton="onShowButton" />
+</view>
+

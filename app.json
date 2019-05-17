@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "page/clues/clues",
+    "page/sneaks/sneaks",
+    "page/channels/channels",
+    "page/anylises/anylises",
+    "page/personal/personal",
+    "page/user/user"
+  ],
+  "window": {
+    "enableWK": "YES",
+    "enableDSL": true,
+    "defaultTitle": "潜客系统之Demo",
+    "backgroundColor": "#F5F5F9",
+    "pullRefresh": false,
+    "allowsBounceVertical": "NO"
+  },
+  "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#108ee9",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "name": "线索管理",
+        "pagePath": "page/clues/clues",
+        "icon": "images/icon-clue-normal.png",
+        "activeIcon": "images/icon-clue-active.png"
+      },
+      {
+        "name": "潜客管理",
+        "pagePath": "page/sneaks/sneaks",
+        "icon": "images/icon-sneak-guest-normal.png",
+        "activeIcon": "images/icon-sneak-guest-active.png"
+      },
+      {
+        "name": "渠道管理",
+        "pagePath": "page/channels/channels",
+        "icon": "images/icon-chancel-normal.png",
+        "activeIcon": "images/icon-chancel-active.png"
+      },
+      {
+        "name": "数据分析",
+        "pagePath": "page/anylises/anylises",
+        "icon": "images/icon-analysis-normal.png",
+        "activeIcon": "images/icon-analysis-active.png"
+      },
+      {
+        "name": "个人中心",
+        "pagePath": "page/personal/personal",
+        "icon": "images/icon-personal-normal.png",
+        "activeIcon": "images/icon-personal-active.png"
+      }
+    ]
+  },
+  "debug": true
+}

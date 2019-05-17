@@ -1,0 +1,23 @@
+<!-- input输入框 -->
+<template name="wen-input-box">
+  <view class="wen-input-box">
+    <text class="wen-input-attribute">{{index}}</text><input class="wen-input-value" value="{{item}}" placeholder="{{placeholder}}" />
+  </view>
+</template>
+<!-- nav导航模块 -->
+<template name="wen-navs">
+  <view class="wen-navs">
+    <view class="wen-navs-icons">
+      <image class="wen-nav-icon-normal" mode="aspectFill" src="{{normal}}"/>
+      <image class="wen-nav-icon-hover" mode="aspectFill" src="{{hover}}"/>
+      <image class="wen-nav-icon-active" mode="aspectFill" src="{{active}}"/>
+    </view>
+    <view class="wen-navs-title">{{text}}</view>
+  </view>
+</template>
+<!-- search搜索框 -->
+<template name="wen-search-box">
+  
+</template>
+
+

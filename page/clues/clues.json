@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search": "../components/search/search",
+    "list": "../components/list/list",
+    "floatblock": "../components/floatblock/floatblock"   
+  },
+  "pullRefresh": false
+}

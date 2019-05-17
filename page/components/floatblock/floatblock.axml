@@ -1,0 +1,53 @@
+<view class="wen-float-block-box" catchTouchMove="moveFloatBlock" catchTouchStart="touchStart" catchTouchEnd="touchEnd" style="{{box_width}}">
+  <slot>
+    <view class="wen-float-block-demo {{is_left?'':'wen-float-block-demo-text-right'}}">
+      <block a:if="{{show_button}}">
+        <block a:if="{{is_left}}">
+          <block a:if="{{icon.shrink.left}}">
+            <image onTap="shrinkButton" class="wen-float-block-shrink-icon" mode="aspectFit" src="{{icon.shrink.left}}" style="{{icon_style}}" />
+          </block>
+          <block a:else>
+            <view onTap="shrinkButton" class="wen-float-block-shrink-icon-view" style="{{icon_style}}">
+              <text class="wen-float-block-shrink-icon-view-left"><</text>
+            </view>
+          </block>
+        </block>
+        <block a:for="{{buttons}}" a:key="*this">
+          <view class="wen-float-block-button" data-options="{{item}}" data-index="{{index}}" onTap="buttonClick"  style="{{item.styles}}">{{item.title}}</view>
+        </block>
+        <block a:if="{{!is_left}}">
+          <block a:if="{{icon.shrink.right}}">
+            <image onTap="shrinkButton" class="wen-float-block-shrink-icon" mode="aspectFit" src="{{icon.shrink.right}}" style="{{icon_style}}" />
+          </block>
+          <block a:else>
+            <view onTap="shrinkButton" class="wen-float-block-shrink-icon-view" style="{{icon_style}}">
+              <text class="wen-float-block-shrink-icon-view-right">></text>
+            </view>
+          </block>
+        </block>
+      </block>
+      <block a:else>
+        <block a:if="{{is_left}}">
+          <block a:if="{{icon.show.left}}">
+            <image onTap="showButton" class="wen-float-block-icon" mode="aspectFit" src="{{icon.show.left}}" style="{{icon_style}}" />            
+          </block>
+          <block a:else>
+            <view onTap="showButton" class="wen-float-block-icon-view" style="{{icon_style}}">
+              <text>+</text>
+            </view>
+          </block>
+        </block>
+        <block a:else>
+          <block a:if="{{icon.show.right}}">
+            <image onTap="showButton" class="wen-float-block-icon" mode="aspectFit" src="{{icon.show.right}}" style="{{icon_style}}" />            
+          </block>
+          <block a:else>
+            <view onTap="showButton" class="wen-float-block-icon-view" style="{{icon_style}}">
+              <text>+</text>
+            </view>
+          </block>
+        </block>
+      </block>
+    </view>
+  </slot>
+</view>

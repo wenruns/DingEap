@@ -1,0 +1,116 @@
+.wen-list-component{
+  font-size: 3.5vw;
+}
+.wen-list-flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wen-list-component .wen-list-healder{
+  border: 1px solid gray;
+  /* width: calc(100vw-1px); */
+  font-weight: bolder;
+}
+.wen-list-item-single{
+  background: #FBFBFB;
+}
+.wen-list-item-double{
+  background: #F4F4F4;
+}
+.wen-list-item{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: 8vw;
+}
+
+.wen-list-component .wen-list-line{
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  color: #666666;
+}
+.wen-list-empty-tips{
+  width: 100vw;
+  padding: 30vw 0px;
+  text-align: center;
+  color: #666666;
+}
+.icon-desc-btn{
+  width:0;
+  height:0;
+  border-width:1.5vw 1.5vw 0vw 1.5vw;
+  border-style:solid;
+  margin-left: 1vw;  
+}
+.icon-desc-btn-border-gray{
+  border-color:#333 transparent transparent transparent; /*灰 透明 透明*/
+}
+.icon-desc-btn-border-black{
+  border-color:black transparent transparent transparent; /*灰 透明 透明*/
+}
+.icon-desc-btn-border-yellow{
+  border-color:yellow transparent transparent transparent; /*灰 透明 透明*/
+}
+.icon-desc-btn-border-yellowgreen{
+  border-color:yellowgreen transparent transparent transparent; /*灰 透明 透明*/
+}
+.icon-desc-btn-border-red{
+  border-color:red transparent transparent transparent; /*灰 透明 透明*/
+}
+.icon-desc-btn-border-pink{
+  border-color:pink transparent transparent transparent; /*灰 透明 透明*/
+}
+.icon-desc-btn-border-blue{
+  border-color:blue transparent transparent transparent; /*灰 透明 透明*/
+}
+.icon-desc-btn-border-blueviolet{
+  border-color:blueviolet transparent transparent transparent; /*灰 透明 透明*/
+}
+.icon-desc-btn-border-green{
+  border-color:green transparent transparent transparent; /*灰 透明 透明*/
+}
+.icon-desc-btn-border-wheat{
+  border-color:wheat transparent transparent transparent; /*灰 透明 透明*/
+}
+
+.icon-asc-btn{
+  width:0;
+  height:0;
+  border-width:0 1.5vw 1.5vw;
+  border-style:solid;
+  margin-left: 1vw;
+}
+
+.icon-asc-btn-border-gray{
+  border-color:transparent transparent #333;/*透明 透明  灰*/
+}
+.icon-asc-btn-border-black{
+  border-color:transparent transparent black;/*透明 透明  灰*/
+}
+.icon-asc-btn-border-yellow{
+  border-color:transparent transparent #333;/*透明 透明  灰*/
+}
+.icon-asc-btn-border-yellowgreen{
+  border-color:transparent transparent yellow;/*透明 透明  灰*/
+}
+.icon-asc-btn-border-red{
+  border-color:transparent transparent red;/*透明 透明  灰*/
+}
+.icon-asc-btn-border-pink{
+  border-color:transparent transparent pink;/*透明 透明  灰*/
+}
+.icon-asc-btn-border-blue{
+  border-color:transparent transparent blue;/*透明 透明  灰*/
+}
+.icon-asc-btn-border-blueviolet{
+  border-color:transparent transparent blueviolet;/*透明 透明  灰*/
+}
+.icon-asc-btn-border-green{
+  border-color:transparent transparent green;/*透明 透明  灰*/
+}
+.icon-asc-btn-border-wheat{
+  border-color:transparent transparent wheat;/*透明 透明  灰*/
+}

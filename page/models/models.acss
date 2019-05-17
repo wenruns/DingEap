@@ -1,0 +1,53 @@
+/* input输入框 */
+.wen-input-box{
+  width: calc(100vw-2px);
+  border: 1px solid #3296FA;
+  margin: 5px 0px;
+  background: #DBF7FF;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  font-size: 3.5vw;
+  height: 8vw;
+}
+.wen-input-box .wen-input-attribute{
+  border: 0px;
+  padding: 0px;
+  width: 22%;
+  text-align: right;
+  background: #F0F0F0;
+  height: 100%;
+  line-height: 8vw;
+  box-sizing: border-box;
+  padding-right: 5px;
+}
+.wen-input-box .wen-input-value{
+  background: #DBF7FF;
+  border: 0px;
+  width: 78%;
+  font-size: 3.5vw;
+  text-align: left;
+}
+
+/* nav导航模块 */
+.wen-navs{
+
+}
+
+.wen-navs .wen-navs-icons{
+
+}
+.wen-navs .wen-navs-icons .wen-nav-icon-normal{
+
+}
+.wen-navs .wen-navs-icons .wen-nav-icon-hover{
+  
+}
+.wen-navs .wen-navs-icons .wen-nav-icon-active{
+  
+}
+.wen-navs .wen-navs-title{
+
+}
+

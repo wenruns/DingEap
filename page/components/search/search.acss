@@ -1,0 +1,47 @@
+/* search搜索框 */
+.wen-search-box{
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 5px;
+  background: #3296FA;
+  box-sizing: border-box;
+}
+.wen-search-box .wen-search{
+  width: 80%;
+  border: 1px solid gray;
+  display: flex;
+  overflow: hidden;
+  border-radius: 8vw;
+  position: relative;
+}
+.wen-search-box .wen-search .wen-search-input{
+  width: 85%;
+  text-align: center;
+  font-size: 3.5vw;
+}
+.wen-search-box .wen-search .wen-search-button{
+  background: greenyellow;
+  height: calc(8vw-2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  text-align: center;
+
+}
+.wen-search-box .wen-search .wen-search-clear-button{
+   position: absolute;
+   top: .9vw;
+   right: 15%;
+}
+.wen-search-box .wen-search .wen-search-clear-button .wen-search-clear-icon{
+   display: inline-flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   width: 4vw;
+}

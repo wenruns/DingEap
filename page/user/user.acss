@@ -1,0 +1,6 @@
+@import "../models/models.acss";
+
+.wellcome-Slogan{
+  background: #3296FA;
+  padding: 5px 2px;
+}

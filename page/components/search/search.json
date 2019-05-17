@@ -1,0 +1,4 @@
+{
+  "component": true,
+  "usingComponents": { "search-bar": "mini-antui/es/search-bar/index" }
+}

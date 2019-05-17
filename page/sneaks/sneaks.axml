@@ -1,0 +1,17 @@
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+>
+  <block a:for="{{background}}">
+    <swiper-item>
+      <view class="swiper-item bc_{{item}}"></view>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="btn-area">
+  <button class="btn-area-button" type="default" onTap="changeIndicatorDots">indicator-dots</button>
+  <button class="btn-area-button" type="default" onTap="changeAutoplay">autoplay</button>
+</view>
+<slider onChange="intervalChange" value="{{interval}}" show-value min="2000" max="10000"/>
+<view class="section__title">interval</view>

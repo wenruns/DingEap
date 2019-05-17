@@ -1,0 +1,61 @@
+<view class="wen-list-component">
+  <view class="wen-list-healder wen-list-flex">
+    <block a:for="{{clumns}}" a:key="*this">
+      <view a:if="{{index%2}}" class="wen-list-item-single wen-list-item  wen-list-flex" data-options="{{item}}" onTap="titleTick" style="{{item.styles.title}}">
+        <text>{{item.title}}</text>
+        <block a:if="{{item.sort}}">
+          <block a:if="{{icon_index[item.title]%2}}">
+            <text class="icon-asc-btn icon-asc-btn-border-{{icon_colors[item.styles.icon_color] ? item.styles.icon_color : 'gray'}}"></text>
+          </block>
+          <block a:else>
+            <text class="icon-desc-btn icon-desc-btn-border-{{icon_colors[item.styles.icon_color] ? item.styles.icon_color : 'gray'}}"></text>
+          </block>
+        </block>
+      </view>
+      <view a:else class="wen-list-item-double wen-list-item" data-options="{{item}}" onTap="titleTick" style="{{item.styles.title}}">
+        <text style="{{item.styles.title}}">{{item.title}}</text>
+        <block a:if="{{item.sort}}">
+          <block a:if="{{icon_index[item.title]%2}}">
+            <view class="icon-asc-btn icon-asc-btn-border-{{icon_colors[item.styles.icon_color] ? item.styles.icon_color : 'gray'}}"></view>
+          </block>
+          <block a:else>
+            <view class="icon-desc-btn icon-desc-btn-border-{{icon_colors[item.styles.icon_color] ? item.styles.icon_color : 'gray'}}"></view>
+          </block>
+        </block>
+      </view>
+    </block>
+  </view>
+  <block a:if="{{lists.length}}"> 
+    <block a:for="{{lists}}" a:key="*this">
+      <view class="wen-list-line wen-list-flex">
+        <block a:for="{{clumns}}" a:for-item="key" a:for-index="k">
+          <block a:if="{{k%2}}">
+             <block a:if="{{key.default}}">
+               <view class="wen-list-item-single wen-list-item" style="{{key.styles.content}}">
+                 <block a:for="{{key.default}}" a:for-item="val" a:for-index="dk">
+                   <text onTap="click" data-options="{{item}}" data-index="{{index}}" data-value="{{val.value}}" data-clumn="{{key.title}}" style="{{val.styles}}">{{val.value}}</text>
+                   <block a:if="{{dk<(key.default.length-1)}}">|</block>
+                 </block>
+               </view>
+             </block>
+             <block a:else>
+              <view class="wen-list-item-single wen-list-item" onTap="click" data-options="{{item}}" data-index="{{index}}" data-value="{{item[key.clumns_name]}}" data-clumn="{{key.title}}" style="{{key.styles.content}}">{{item[key.clumns_name]}}</view>
+             </block>
+          </block>
+          <block a:else>
+            <block a:if="{{key.default}}">
+              <view a:for="{{key.default}}" a:key="*this" a:for-item="val" class="wen-list-item-double wen-list-item" onTap="click" data-options="{{item}}" data-index="{{index}}" data-value="{{val}}" data-clumn="{{key.title}}" style="{{key.styles.content}}">{{val}}</view>
+             </block>
+             <block a:else>
+              <view class="wen-list-item-double wen-list-item" onTap="click" data-options="{{item}}" data-index="{{index}}" data-value="{{item[key.clumns_name]}}" data-clumn="{{key.title}}" style="{{key.styles.content}}">{{item[key.clumns_name]}}</view>
+             </block>
+            <!-- <view class="wen-list-item-double wen-list-item" onTap="click" data-options="{{item}}" data-index="{{index}}" data-value="{{key.default ? key.default : item[key.clumns_name]}}" data-clumn="{{key.title}}" style="{{key.styles.content}}">{{key.default ? key.default : item[key.clumns_name]}}</view> -->
+          </block>
+        </block>
+      </view>
+    </block>
+  </block>
+  <block a:else>
+    <view class="wen-list-empty-tips">{{empty_tips}}</view>
+  </block> 
+</view>
